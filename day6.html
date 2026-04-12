@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #maindiv{
+            /* display:flex;
+            flex-direction:row;  */
+            display:grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(2,80px);
+            text-align:center;
+            /*width:200px; */
+        }
+        #maindiv > div{
+            padding: 10px;
+            margin:10px;
+            border:1px solid grey;
+            background-color: azure;
+            color:rgb(31, 39, 47);
+            border-radius: 10px;
+            font-weight:800;
+        } 
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <div>Home</div>
+         <div>Events</div>
+          <div>Gallery</div>
+           <div>Products</div>
+            <div>Contacts</div>
+    </div>
+</body>
+</html>
