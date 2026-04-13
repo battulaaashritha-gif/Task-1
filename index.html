@@ -4,101 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
-        footer{
-            display: flex;
-            line-height: 2;
-            background-color: aquamarine;
-            position: fixed;
-            bottom: 0px;
-            left:0px;
-            width:100%;
-            color:beige;
-
-        }
-        #col2{
-            margin-left: 50px;
-        }
-        li:hover{
-            color:black;
-            font-weight: 700;
-        }
-        #header{
-            display:flex;
-            margin:20px;
-        }
-        li{
-            margin:20px
-        }
-        select{
+        /* button{
+            color: blue;
+            background: blanchedalmond;
             border:none;
-        }
-        i{
-            font-size: 14px;
-            margin-right:7px;
-        }
-        .a{
-            color:transparent;
-            background-image: linear-gradient
-            (#f9ce34, #ee2a7b );
-            -webkit-background-clip: text;
-            font-size:40px;
-        }
-         #maindiv{
-            /* display:flex;
-            flex-direction:row;  */
-            display:grid;
-            grid-template-columns: repeat(3,100px);
-            grid-template-rows: repeat(2,80px);
-            text-align:center;
-            /*width:200px; */
-        }
-        #maindiv > div{
-            padding: 10px;
-            margin:10px;
-            border:1px solid grey;
-            background-color: azure;
-            color:rgb(31, 39, 47);
+            height: 30px;
+            font-weight: 700;
             border-radius: 10px;
-            font-weight:800;
-        } 
+        } */
     </style>
 </head>
 <body>
-    <nav>
-        <ul type="none" id="header">
-            <li><i class="fa-solid fa-user"></i>About</li>
-            <li><i class="fa-brands fa-instagram"></i>Events</li>
-            <li>
-                <select>
-                   <option>products</option>
-                   <option>Phone</option>
-                   <option>Laptop</option>
-                   <option>Cosmetics</option>
-                </select>
-            </li>
-            <li>Services</li>
-        </ul>
-    </nav>
-     <div id="maindiv">
-        <div>Home</div>
-         <div>Events</div>
-          <div>Gallery</div>
-           <div>Products</div>
-            <div>Contacts</div>
+  <nav class="navbar navbar-expand-lg bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="day1.html">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="day2.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="day3.html">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="day4.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
     </div>
-    <footer>
-        <div id="col1">
-            <ul type="none">
-                <li>Blog</li>
-                <li>Resource</li>
-                <li>Events</li>
-                <li>Contact</li>
-
-            </ul>
-        </div>
-    </footer>
+  </div>
+</nav>
+    <!-- <button class="btn btn-primary">Click here!</button> -->
+     <div class="container text-center mt-5">
+  <div class="row">
+    <div class="col ms-2 bg-primary">
+      Name<i class="bi bi-emoji-smile"></i>
+    </div>
+    <div class="col-md ms-2 bg-warning">
+      Roll no
+    </div>
+    <div class="col ms-2 bg-success">
+      Photo
+    </div>
+    <div class="col-md ms-2 bg-danger">
+      Course
+    </div>
+  </div>
+</div>
 </body>
 </html>
